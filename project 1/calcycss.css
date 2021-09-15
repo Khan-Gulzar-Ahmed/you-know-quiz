@@ -1,0 +1,66 @@
+*
+{
+    
+    font-family: 'Rajdhani', sans-serif;
+    font-weight: 600;
+    
+   
+    
+}
+body
+{
+   
+    background-color: rgba(138, 236, 203, 0.658);
+}
+h1{
+    text-align: center;
+}
+#container
+{
+    position:absolute;
+    left: 50%;
+    bottom: 50%;
+    transform: translateY(50%);
+    transform: translateX(-50%);
+    background-color: rgba(0, 0, 0, 0.301);
+    padding: 20px;
+    height: 35%;
+    margin: 20px;
+    border: 5px solid rgba(0, 0, 0, 0.466);
+    border-radius: 10px;
+    width: 700px;
+    
+}
+label
+{
+    font-size: 1.5em;
+}
+#for
+{
+    
+    color: blueviolet;
+
+}
+p{
+    display: inline;
+}
+
+.celcy
+{
+    height: 30px;
+    width: 200px;
+    border: 1px solid rgba(101, 218, 101, 0.808);
+    border-radius: 5px;
+   
+}
+.input
+{
+    display: inline;
+    font-size: 20px;
+}
+input
+{
+    font-size: 25px;
+    font-weight: 700;
+}
+
