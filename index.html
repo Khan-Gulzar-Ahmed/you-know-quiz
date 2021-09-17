@@ -1,0 +1,220 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Quiz</title>
+</head>
+<style>
+    body
+    {
+        background-color: rgba(131, 158, 180, 0.829);
+        font-family:Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+        font-size: 17px;
+    }
+
+    #form
+    {
+        position: relative;
+        line-height: 27px;
+    }
+    #container
+    {
+        position: relative;
+        left: 30%;
+        border: 2px solid rgba(66, 66, 194, 0.349);
+        width: 550px;
+        padding: 15px;
+        background-color: rgba(82, 82, 151, 0.288);
+        border-radius: 10px;
+    }
+    .q1 .q2 .q3 .q4 .q5 .q6 .q7 .q8 .q9 .q10
+    {
+        height: 50px;
+        width: 150px;
+    }
+    #name{
+        height: 25px;
+        width: 200px;
+        border-radius: 3px;
+        border: 1px solid blue;
+    }
+    #submit{
+        position: relative;
+        height: 35px;
+        width: 100px;
+        font-size: 25px;
+        background-color: blue;
+        color: white;
+        border-radius: 3px;
+        border: 1px solid blue;
+        left: 80%;
+        
+    }
+    label{
+        font-size: 15px;
+        color: rgb(199, 44, 70);
+    }
+    #score{
+        font-size: 25px;
+        color: blue;
+    }
+    #hignscore{
+        font-size: 25px;
+        color: blueviolet;
+    }
+    
+</style>
+
+  
+
+<body>
+    <h1 style="text-align: center;color: green;">Let's Play the Game of Known : "Gulzar" </h1>
+    <h3 style="text-align: center;color: rgba(0, 0, 0, 0.61);">Take Screenshot of your score and send me back</h3>
+    <div id="container">
+        <div id="form">
+            Enter Your name to play Game : <input type="text" class="name" id="name" placeholder="Enter your name ..">
+            <br><label id="nameLable"></label>
+            <h2>Select the appropriate option below:</h2>
+          Q1) :  Select the full name of Gulzar :  <br>
+           &nbsp;&nbsp;&nbsp; <input type="radio" name="q1" class="q1" id="option1" value="gulzar"> Gulzar
+            <input type="radio" name="q1" class="q1" id="option2" value="gulzar ahmed"> Gulzar Ahmed
+            <input type="radio" name="q1" class="q1" id="option3" value="khan gulzar"> Khan Gulzar
+            <input type="radio" name="q1" class="q1" id="option4" value="khan gulzar ahmed"> Khan Gulzar Ahmed
+
+<br>
+            Q2) :  Where he lliving currently ?  <br>
+            &nbsp;&nbsp;&nbsp;<input type="radio" name="q2" class="q2" id="option5" value="mumbai"> Mumbai
+            <input type="radio" name="q2" class="q2" id="option6" value="delhi"> Delhi
+            <input type="radio" name="q2" class="q2" id="option7" value="up"> UP
+            <input type="radio" name="q2" class="q2" id="option8" value="gujrat"> Gujrat
+<br>
+            Q3) :  What is his qualification ?  <br>
+            &nbsp;&nbsp;&nbsp; <input type="radio" name="q3" class="q3" id="option9" value="master"> Master
+            <input type="radio" name="q3" class="q3" id="option10" value="graduation"> Graduation
+            <input type="radio" name="q3" class="q3" id="option11" value="intermidiate"> Intermidiate
+            <input type="radio" name="q3" class="q3" id="option12" value="dont know"> Don't Know
+<br>
+            Q4) :  What is his native place ?  <br>
+            &nbsp;&nbsp;&nbsp; <input type="radio" name="q4" class="q4" id="option13" value="mumbai"> Mumbai
+            <input type="radio" name="q4" class="q4" id="option14" value="delhi"> Delhi
+            <input type="radio" name="q4" class="q4" id="option15" value="up"> UP
+            <input type="radio" name="q4" class="q4" id="option16" value="gujrat"> Gujrat
+<br>
+            Q5) :  Most like fast food ?  <br>
+            &nbsp;&nbsp;&nbsp; <input type="radio" name="q5" class="q5" id="option17" value="samosa"> Samosa
+            <input type="radio" name="q5" class="q5" id="option18" value="idli dosa"> Idli & Dosa
+            <input type="radio" name="q5" class="q5" id="option19" value="vada pav"> Vada Pav
+            <input type="radio" name="q5" class="q5" id="option20" value="chinese"> Chinese Fast Food
+<br>
+            Q6) :  What he is most like as Career option ? <br>
+            &nbsp;&nbsp;&nbsp; <input type="radio" name="q6" class="q6" id="option21" value="programmer"> Programmer
+            <input type="radio" name="q6" class="q6" id="option22" value="designer"> Designer
+            <input type="radio" name="q6" class="q6" id="option23" value="dba"> DBA
+            <input type="radio" name="q6" class="q6" id="option24" value="tester"> Tester
+<br>
+            Q7) :  What is his most like dinner ?  <br>
+            &nbsp;&nbsp;&nbsp; <input type="radio" name="q7" class="q7" id="option25" value="dal gosht"> Dal Gosht
+            <input type="radio" name="q7" class="q7" id="option26" value="biryani"> Biryani
+            <input type="radio" name="q7" class="q7" id="option27" value="chicken"> Chiken Chilli
+            <input type="radio" name="q7" class="q7" id="option28" value="sada dal-chawal"> Daal Chawal
+<br>
+            Q8) :  His behaviour with other ?  <br>
+            &nbsp;&nbsp;&nbsp; <input type="radio" name="q8" class="q8" id="option29" value="silent"> Silent
+            <input type="radio" name="q8" class="q8" id="option30" value="voilent"> Voilent
+            <input type="radio" name="q8" class="q8" id="option31" value="friendly"> Friendly
+            <input type="radio" name="q8" class="q8" id="option32" value="simple"> Simple
+<br>
+            Q9) :  Is he merried ?  <br>
+            &nbsp;&nbsp;&nbsp; <input type="radio" name="q9" class="q9" id="option33" value="yes"> Yes
+            <input type="radio" name="q9" class="q9" id="option34" value="no"> No
+            <input type="radio" name="q9" class="q9" id="option35" value="maybe"> May be
+            <input type="radio" name="q9" class="q9" id="option36" value="doknow"> Don't Know
+<br>
+            Q10) :  How many years old ?  <br>
+          &nbsp;&nbsp;&nbsp;  <input type="radio" name="q10" class="q10" id="option37" value="23"> 23
+            <input type="radio" name="q10" class="q10" id="option38" value="24"> 24
+            <input type="radio" name="q10" class="q10" id="option39" value="25"> 25
+            <input type="radio" name="q10" class="q10" id="option40" value="26"> 26
+            <br>
+            <input type="submit" name="save" value="submit" id="submit">
+            
+<br>
+            <label id="score"></label><br>
+            <label id="hignscore"></label>
+        </div>
+        
+    </div>
+    
+</body>
+<script>
+    
+    var score=0;
+    var highscore=9;
+
+    
+    
+    var ans1=document.getElementById('option4').value;
+           var ans2=document.getElementById('option5').value;
+           var ans3=document.getElementById('option10').value;
+           var ans4=document.getElementById('option15').value;
+           var ans5=document.getElementById('option19').value;
+           var ans6=document.getElementById('option21').value;
+           var ans7=document.getElementById('option26').value;
+           var ans8=document.getElementById('option31').value;
+           var ans9=document.getElementById('option34').value;
+           var ans10=document.getElementById('option38').value;
+    document.getElementById('submit').addEventListener('click',function(){
+        var name=document.getElementById('name').value;
+        if(name!=''){
+            document.getElementById('nameLable').innerHTML="";
+            if(document.getElementById('option4').checked) {
+                score=score+1;
+            }
+            if(document.getElementById('option5').checked) {
+                score=score+1;
+            }
+            if(document.getElementById('option10').checked) {
+                score=score+1;
+            }
+            if(document.getElementById('option15').checked) {
+                score=score+1;
+            }
+            if(document.getElementById('option19').checked) {
+                score=score+1;
+            }
+            if(document.getElementById('option21').checked) {
+                score=score+1;
+            }
+            if(document.getElementById('option26').checked) {
+                score=score+1;
+            }
+            if(document.getElementById('option31').checked) {
+                score=score+1;
+            }
+            if(document.getElementById('option34').checked) {
+                score=score+1;
+            }
+            if(document.getElementById('option38').checked) {
+                score=score+1;
+            }
+        
+            if(score>=highscore)
+            {
+                document.getElementById('hignscore').innerHTML="Congratulations you beaten the High Score !!";
+            }
+            document.getElementById('score').innerHTML="Hello ! "+name+" Your Score is : "+score;
+            score=0;
+            
+        }
+        else
+        {
+            document.getElementById('nameLable').innerHTML="Name is mandatory to play Quiz";
+        }
+    });
+    
+    
+    </script>
+
+</html>
