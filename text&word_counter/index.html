@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Counter</title>
+</head>
+<style>
+    body
+    {
+        background-color: rgba(138, 221, 193, 0.377);
+    }
+    h1
+    {
+        margin: 20px;
+        width: 90%;
+        text-align: center;
+        background-color: rgba(5, 177, 5, 0.842);
+        color: white;
+        padding: 10px;
+        border-radius: 5px;
+    }
+    textarea
+    {
+        margin: 20px;
+        width: 90%;
+        border:2px solid rgba(5, 177, 5, 0.842) ;
+        border-radius: 5px; 
+        font-family: 'Courier New', Courier, monospace;
+        font-size: 20px;
+        font-weight: 700;
+    }
+    #count
+    {
+        margin: 20px;
+        width: 90%;
+        text-align: center;
+        background-color: rgba(5, 177, 5, 0.842);
+        padding: 10px;
+        font-size: 30px;
+        font-weight: 600;
+        color: white;
+    }
+    div
+    {
+        background-color: rgba(36, 35, 35, 0.11);
+        padding: 20px;
+        border-radius: 10px;
+    }
+
+</style>
+<body>
+    <div>
+
+        <h1>Text & Words Counter</h1>
+        <textarea placeholder="Enter Text to count . . . " id="textarea" cols="30" rows="10"></textarea>
+        <div id="count">
+            Your Entered : <span id="char">0</span> Characters & <span id="word">0</span> Words
+        </div>
+    </div>
+</body>
+<script>
+    let textarea=document.getElementById('textarea');
+    textarea.addEventListener('input',function()
+    {
+       let text=this.value;
+       let num=text.length;
+       let char=document.getElementById('char');
+       char.innerHTML=num;
+        
+        text=text.trim();
+      var wor=text.split(' ');
+      let clean=wor.filter(function(elm){
+          return elm != '';
+      });
+      document.getElementById('word').innerHTML=clean.length;
+      
+
+    });
+</script>
+</html>
