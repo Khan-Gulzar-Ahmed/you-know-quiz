@@ -1,4 +1,4 @@
-# NeoG-Camp
+# PHP and SQL small project
 @project_1
 add databaseas name of neog_p1 on mysql
 set username and password of mysql as your localmachine or server
